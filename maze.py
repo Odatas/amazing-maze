@@ -50,7 +50,7 @@ mysteryTable={
 A=[[1,0,0,0,1,1,0,0,0,1]]
 
 #create maze range is number of rows. 
-for i in range(100000):
+for i in range(1000):
     #initialize new row
     newRow=[1,0]
     while len(newRow) < 9:
@@ -129,15 +129,15 @@ for i in range(len(A)):
 row=''
 if pathfound:
     print("Path was found from start to finish without break.")
-    for i in range(len(A)):
-        for j in range(len(A[i])):
-            if A[i][j]!=5:
-                row=row+'|'
-            else:
-                row=row + "X"
-            row=row+'  '
-        print(row)
-        row=''
+    # for i in range(len(A)):
+    #     for j in range(len(A[i])):
+    #         if A[i][j]!=5:
+    #             row=row+'|'
+    #         else:
+    #             row=row + "X"
+    #         row=row+'  '
+    #     print(row)
+    #     row=''
     
 # for i in range(len(A)):
 #     print(A[i])
